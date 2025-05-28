@@ -1,0 +1,11 @@
+name: Hardcoded API Key Workflow
+
+on: [push]
+
+jobs:
+  test_hardcoded:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show hardcoded API key
+        run: echo "a60c7bbe14dc40897b6211799bee19ed"  # Hardcoded sensitive info
+
